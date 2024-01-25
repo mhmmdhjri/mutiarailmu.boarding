@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,8 @@
   <link href="src/output.css" rel="stylesheet">
 </head>
 <title>Yayasan Pendidikan Mutiara Ilmu | Islamic Boarding School</title>
-<body>
-  <header class=" bg-white/70 top-0 left-0 w-full z-50 flex items-center sticky">
+<body class="dark:bg-slate-800">
+  <header class=" bg-white/70 top-0 left-0 w-full z-50 flex items-center sticky ">
     <div class="w-full ml-auto mr-auto px-[16px] py-[10px]">
         <div class="relative flex justify-between items-center">
           <h1 class="w-3/12">
@@ -19,28 +19,43 @@
           </h1>
           <div class="flex items-center ">
             <button id="hamburger" name="hamburger" type="button" class="absolute block right-4 lg:hidden ">
-              <span class="hamburger-line  origin-top-left transition duration-500 ease-in-out"></span>
+              <span class="hamburger-line  origin-top-left transition duration-500 ease-in-out "></span>
               <span class="hamburger-line transition duration-500 ease-in-out"></span>
               <span class="hamburger-line  origin-bottom-left transition duration-500 ease-in-out"></span>
             </button>
-            <nav id="nav-menu" class="absolute py-5 right-4 max-w-[250px] bg-white top-full rounded-lg shadow-2xl drop-shadow-2xl w-full hidden lg:block lg:static lg:max-w-full lg:bg-transparent lg:shadow-none lg:py-2">
+            <nav id="nav-menu" class="absolute py-5 right-4 max-w-[250px] bg-white  top-full rounded-lg shadow-2xl drop-shadow-2xl w-full hidden lg:block lg:static lg:max-w-full lg:bg-transparent lg:shadow-none lg:py-2 ">
               <ul class="block lg:flex">
                 <li class="group">
-                  <a href="#home" class="text-base py-2 mx-8 font-bold flex group-hover:text-green-700 p-3 border-b-2 border-green-700 text-black  border-opacity-0 hover:border-opacity-100 hover:text-green-700  duration-200 cursor-pointer active lg:p-4 group">Home</a>
+                  <a href="#home" class="text-base py-2 mx-8 font-bold flex group-hover:text-green-700 p-3 border-b-2 border-green-700 text-black  border-opacity-0 hover:border-opacity-100 hover:text-green-700 dark:text-white  duration-200 cursor-pointer active lg:p-4 group">Home</a>
                 </li>
                 <li class="group">
-                  <a href="#about" class="text-base py-2 mx-8  font-bold flex group-hover:text-green-700  p-3 border-b-2  border-green-700 text-black  border-opacity-0 hover:border-opacity-100 hover:text-green-700  duration-200 cursor-pointer lg:p-4 lg:block group ">About</a>
+                  <a href="#about" class="text-base py-2 mx-8  font-bold flex group-hover:text-green-700 dark:text-white  p-3 border-b-2  border-green-700 text-black  border-opacity-0 hover:border-opacity-100 hover:text-green-700 dark:text-white  duration-200 cursor-pointer lg:p-4 lg:block group ">About</a>
                 </li>
                 <li class="group">
-                  <a href="#picture" class="text-base py-2 mx-8  font-bold flex group-hover:text-green-700  p-3 border-b-2  border-green-700 text-black  border-opacity-0 hover:border-opacity-100 hover:text-green-700  duration-200 cursor-pointer lg:p-4 lg:block group">Photos</a>
+                  <a href="#picture" class="text-base py-2 mx-8  font-bold flex group-hover:text-green-700 dark:text-white  p-3 border-b-2  border-green-700 text-black  border-opacity-0 hover:border-opacity-100 hover:text-green-700 dark:text-white  duration-200 cursor-pointer lg:p-4 lg:block group">Photos</a>
                 </li>
                 <li class="group">
-                  <a href="#contact" class="text-base py-2 mx-8  font-bold flex group-hover:text-green-700  p-3 border-b-2  border-green-700 text-black  border-opacity-0 hover:border-opacity-100 hover:text-green-700  duration-200 cursor-pointer lg:p-4 lg:block group" >Contact</a>
+                  <a href="#contact" class="text-base py-2 mx-8  font-bold flex group-hover:text-green-700 dark:text-white  p-3 border-b-2  border-green-700 text-black  border-opacity-0 hover:border-opacity-100 hover:text-green-700 dark:text-white  duration-200 cursor-pointer lg:p-4 lg:block group" >Contact</a>
                 </li>
                 <li class="group">
-                  <a href="#comen" class="text-base py-2 mx-8  font-bold flex group-hover:text-green-700  p-3 border-b-2  border-green-700 text-black  border-opacity-0 hover:border-opacity-100 hover:text-green-700  duration-200 cursor-pointer lg:p-4 lg:block group" >Comment</a>
+                  <a href="#comen" class="text-base py-2 mx-8  font-bold flex group-hover:text-green-700 dark:text-white  p-3 border-b-2  border-green-700 text-black  border-opacity-0 hover:border-opacity-100 hover:text-green-700  duration-200 cursor-pointer lg:p-4 lg:block group" >Comment</a>
                   
                 </li>
+                <li class=" flex items-center pl-8">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500 dark:text-white">Light</span>
+                    <input type="checkbox" class="hidden"  id="dark-toggle">
+                    <label for="dark-toggle">
+                      <div class="flex h-5 w-9 rounded-full bg-black items-center p-0.5 cursor-pointer">
+                        <div class="toggle-circle h-4 w-4 bg-white rounded-full">
+  
+                        </div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500 dark:text-black">Dark</span>
+                
+                  </div>
+                  </li>
               </ul>
             </nav>
         </div>
@@ -73,15 +88,15 @@
               class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-green-700 relative inline-block">
               <span class="relative text-white ">About</span></span>  <span class="text-white">Us
             </span></h1>
-        <p class="font-semibold text-red-600 mb-5">Alasan Kalian Harus Masuk <span class="text-green-700 underline">YPMI</span> !!</p>
+        <p class="font-semibold text-red-600 mb-5 dark:text-white">Alasan Kalian Harus Masuk <span class="text-green-700 underline">YPMI</span> !!</p>
     <div class="row">
           <div class="about-img">
-              <img class="outline outline-offset-4 outline-black shadow-2xl" src="src/about.png" alt="tentang kami">
+              <img class="outline outline-offset-4 outline-black dark:outline-white shadow-2xl" src="src/about.png" alt="tentang kami">
           </div>
           <div class="content">
-              <h3>Sekolah Apasih <span class="text-green-600 underline">YPMI</span> ?</h3>
-              <p>Sekolah umum rasa pondok yg menyediakan fasilitas lengkap dan di <span class="text-green-700 underline">YPMI </span> tidak hanya mepelajari </p>
-              <p>Pelajaran Umum Tetapi juga memepelajari ilmu agama dah berbahasa arab dan juga mencetak generasi yg berakhlak mulia + dapat juga ijazah looh</p>
+              <h3 class="dark:text-white">Sekolah Apasih <span class="text-green-600 underline">YPMI</span> ?</h3>
+              <p class="dark:text-white">Sekolah umum rasa pondok yg menyediakan fasilitas lengkap dan di <span class="text-green-700 underline">YPMI </span> tidak hanya mepelajari </p>
+              <p class="dark:text-white">Pelajaran Umum Tetapi juga memepelajari ilmu agama dah berbahasa arab dan juga mencetak generasi yg berakhlak mulia + dapat juga ijazah looh</p>
           </div>
           
       </div>
@@ -104,61 +119,61 @@
         </div>
         <div id="our-clients"></div>
       </article>
-      <div class="overflow-hidden bg-white py-24 sm:py-32">
+      <div class="overflow-hidden bg-white py-24 sm:py-32 dark:bg-slate-800">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div class="lg:pr-8 lg:pt-4">
               <div class="lg:max-w-lg">
-                <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Kelebihan <span class="text-green-600  underline">YPMI</span> </p>
+                <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl dark:text-white">Kelebihan <span class="text-green-600  underline">YPMI </span>🌟  </p>
       
                 <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                   <div class="relative pl-9">
-                    <dt class="inline font-semibold text-gray-900">
+                    <dt class="inline font-semibold text-gray-900 dark:text-white">
                       <img src="src/star.svg" alt="" class="absolute left-1 top-1 h-7 w-7" >
                      Mencetak Generasi Penghafal Al-Qur'an
                     </dt>
                   </div>
                   <div class="relative pl-9">
-                    <dt class="inline font-semibold text-gray-900">
+                    <dt class="inline font-semibold text-gray-900 dark:text-white">
                       <img src="src/star.svg" alt="" class="absolute left-1 top-1 h-7 w-7" >
                       Belajar Umum Serasa Pondok + ijazah
                     </dt>
                   </div>
                   <div class="relative pl-9">
-                    <dt class="inline font-semibold text-gray-900">
+                    <dt class="inline font-semibold text-gray-900 dark:text-white">
                       <img src="src/star.svg" alt="" class="absolute left-1 top-1 h-7 w-7" >
                       Fasilitas Lengkap + AC
                     </dt>
                   </div>
                   <div class="relative pl-9">
-                    <dt class="inline font-semibold text-gray-900">
+                    <dt class="inline font-semibold text-gray-900 dark:text-white">
                       <img src="src/star.svg" alt="" class="absolute left-1 top-1 h-7 w-7" >
                     Fasih Berbahasa Arab
                     </dt>
                   </div>
                   <div class="relative pl-9">
-                    <dt class="inline font-semibold text-gray-900">
+                    <dt class="inline font-semibold text-gray-900 dark:text-white">
                       <img src="src/star.svg" alt="" class="absolute left-1 top-1 h-7 w-7" >
                     Pengajar Minimal Lulusan S1
                     </dt>
                   </div>
                   <div class="relative pl-9">
-                    <dt class="inline font-semibold text-gray-900">
+                    <dt class="inline font-semibold text-gray-900 dark:text-white">
                       <img src="src/star.svg" alt="" class="absolute left-1 top-1 h-7 w-7" >
                      Mencetak Genersai Yg Ber Adab Mulia Kepada Umat Manusia
                     </dt>
                   </div>
-                  <button class="mt-5 text-white tracking-widest font-mono font-semibold text-sm mb-4 md:text-lg bg-black py-2 px-5 rounded-lg transition duration-500 ease-in-out mr-1 ml-8 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-2xl">Learn More</button>
+                  <button class="mt-5 text-white dark:text-black tracking-widest font-mono font-semibold text-sm mb-4 md:text-lg bg-black dark:bg-white  py-2 px-5 rounded-lg transition duration-500 ease-in-out mr-1 ml-8 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-2xl ">Learn More</button>
                 </dl>
               </div>
             </div>
-            <img src="src/ss.png" alt="Product screenshot" class="outline rounded-lg shadow-2xl outline-offset-4 outline-black w-[5rem] mt-24 hidden lg:block md:block md:w-[40rem] md:-ml-4 lg:-ml-0 -skew-y-6" width="2432" height="1442">
+            <img src="src/ss.png" alt="Product screenshot" class="outline rounded-lg shadow-2xl outline-offset-4 outline-black dark:outline-white w-[5rem] mt-24 hidden lg:block md:block md:w-[40rem] md:-ml-4 lg:-ml-0 -skew-y-6" width="2432" height="1442">
           </div>
         </div>
       </div>
      
 
-      <div class="h-full min-h-screen w-full bg-white pt-12 p-4 ">
+      <div class="h-full min-h-screen w-full bg-white dark:bg-slate-800 pt-12 p-4 ">
         <div class="grid gap-14 md:grid-cols-3 md:gap-5 mt-20">
           <div class="rounded-xl bg-white p-6 text-center shadow-2xl drop-shadow-2xl">
             <div
@@ -325,59 +340,59 @@
 <!-- picture -->
 <section id="picture" >
   <div class="max-w-[1240px] mx-auto py-1 px-1 text-center">
-    <h1 class="font-bold text-3xl mb-5 ">Some &nbsp; <span class="italic text-white"> <span
+    <h1 class="font-bold text-3xl mb-5  dark:text-white">Some &nbsp; <span class="italic text-white"> <span
           class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-green-700 relative inline-block">
-          <span class="relative text-white">Photos </span></span> &nbsp; <span class="text-black">Of Our School
+          <span class="relative text-white">Photos </span></span> &nbsp; <span class="text-black dark:text-white">Of Our School
         </span></h1>
     <p class="font-semibold text-red-600 mb-5">Yuk lihat keseruan santri <span class="text-green-600 underline">YPMI</span> Di foto foto berikut
     !!!</p>
-      <button class="text-white tracking-widest font-mono font-semibold text-sm mb-16 md:text-lg bg-black py-2 px-5 rounded-lg transition duration-500 ease-in-out mr-4 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-2xl "><a href="https://www.instagram.com/mutiarailmu.boarding/">See Others</a> </button>
+      <button class="text-white dark:text-black tracking-widest font-mono font-semibold text-sm mb-16 md:text-lg bg-black dark:bg-white py-2 px-5 rounded-lg transition duration-500 ease-in-out mr-4 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-2xl "><a href="https://www.instagram.com/mutiarailmu.boarding/">See Others</a> </button>
 
 
 
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-1" >
   <div class="grid gap-4">
       <div>
-          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black" src="src/1.png" alt="">
+          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black dark:outline-white" src="src/1.png" alt="">
       </div>
       <div>
-          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black" src="src/2.png" alt="">
+          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black dark:outline-white" src="src/2.png" alt="">
       </div>
       <div>
-          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black" src="src/7.png" alt="">
-      </div>
-  </div>
-  <div class="grid gap-4">
-      <div>
-          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black" src="src/14.png" alt="">
-      </div>
-      <div>
-          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black" src="src/10.png" alt="">
-      </div>
-      <div>
-          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black" src="src/4.png" alt="">
+          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black dark:outline-white" src="src/7.png" alt="">
       </div>
   </div>
   <div class="grid gap-4">
       <div>
-          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black" src="src/Screenshot 2024-01-17 at 11.18.37.png" alt="">
+          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black dark:outline-white" src="src/14.png" alt="">
       </div>
       <div>
-          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black" src="src/11.png" alt="">
+          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black dark:outline-white" src="src/10.png" alt="">
       </div>
       <div>
-          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black" src="src/12.png" alt="">
+          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black dark:outline-white" src="src/4.png" alt="">
       </div>
   </div>
   <div class="grid gap-4">
       <div>
-          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black" src="src/8.png" alt="">
+          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black dark:outline-white" src="src/Screenshot 2024-01-17 at 11.18.37.png" alt="">
       </div>
       <div>
-          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black" src="src/9.png" alt="">
+          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black dark:outline-white" src="src/11.png" alt="">
       </div>
       <div>
-          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black" src="src/6.png" alt="">
+          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black dark:outline-white" src="src/12.png" alt="">
+      </div>
+  </div>
+  <div class="grid gap-4">
+      <div>
+          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black dark:outline-white" src="src/8.png" alt="">
+      </div>
+      <div>
+          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black dark:outline-white" src="src/9.png" alt="">
+      </div>
+      <div>
+          <img class="h-auto max-w-full rounded-lg outline outline-offset-4 outline-black dark:outline-white" src="src/6.png" alt="">
       </div>
   </div>
   
@@ -393,7 +408,7 @@
     <div class="max-w-[1240px] mx-auto py-1 px-4 text-center ">
       <h1 class="font-bold text-3xl mb-5 "> <span class="italic text-white"> <span
             class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-green-700 relative inline-block">
-            <span class="relative text-white">Contact </span></span>  <span class="text-black">Us
+            <span class="relative text-white">Contact </span></span>  <span class="text-black dark:text-white">Us
           </span></h1>
       <p class="font-semibold text-red-600 mb-5">
         Jl. Madong Lubis No. 6 (Komplek SMP/SMA Swasta Daerah) Kisaran, Asahan - Sumatera Utara, Kisaran, Indonesia</p>
@@ -415,7 +430,7 @@
                   <div class="inline-block rounded-md bg-primary-100 p-4 text-primary">
                     <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                       stroke="currentColor" class="h-6 w-6 mt-5">
-                      <path stroke-linecap="round" stroke-linejoin="round"
+                      <path  stroke-linecap="round" stroke-linejoin="round"
                         d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0l6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z" />
                     </svg>
                   </div>
@@ -437,11 +452,11 @@
               <div class="flex items-start">
                 <div class="shrink-0">
                   <div class="inline-block rounded-md bg-primary-100 p-4 text-primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" width="30px" height="30px" viewBox="0 0 512 512" xml:space="preserve">
+                    <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" width="30px" height="30px" viewBox="0 0 512 512" xml:space="preserve">
 
                         <g id="7935ec95c421cee6d86eb22ecd11f972">
                         
-                        <path style="display: inline; fill-rule: evenodd; clip-rule: evenodd;" d="M511.5,446.753V65.247H0.5v381.506H511.5L511.5,446.753   L511.5,446.753z M438.245,368.552v74.224H79.53v-70.247h0.615l1.816-0.605l134.664-108.435l40.74,34.519l36.176-31.78   L438.245,368.552L438.245,368.552L438.245,368.552z M438.245,355.428l-137.114-95.917l137.114-118.819V355.428L438.245,355.428   L438.245,355.428z M415.453,69.215L396.898,86.93l-8.811,8.569l-8.205,8.532l-8.514,7.944l-7.898,7.945l-7.6,7.33l-7.004,7.33   l-7.294,6.725l-6.688,6.725l-12.462,12.519l-11.867,11.298l-5.457,5.197l-4.871,5.188l-5.16,4.285l-4.574,4.266l-8.195,7.954   l-3.959,3.354l-3.344,3.371l-3.344,2.72l-2.748,3.074l-5.16,4.284l-2.123,1.509l-1.527,1.845l-1.816,0.912l-1.221,1.229   l-1.518,1.211L101.102,68.609L415.453,69.215L415.453,69.215L415.453,69.215z M208.727,256.764L79.53,360.001l0.298-212.893   L208.727,256.764L208.727,256.764L208.727,256.764z">
+                        <path  style="display: inline; fill-rule: evenodd; clip-rule: evenodd;" d="M511.5,446.753V65.247H0.5v381.506H511.5L511.5,446.753   L511.5,446.753z M438.245,368.552v74.224H79.53v-70.247h0.615l1.816-0.605l134.664-108.435l40.74,34.519l36.176-31.78   L438.245,368.552L438.245,368.552L438.245,368.552z M438.245,355.428l-137.114-95.917l137.114-118.819V355.428L438.245,355.428   L438.245,355.428z M415.453,69.215L396.898,86.93l-8.811,8.569l-8.205,8.532l-8.514,7.944l-7.898,7.945l-7.6,7.33l-7.004,7.33   l-7.294,6.725l-6.688,6.725l-12.462,12.519l-11.867,11.298l-5.457,5.197l-4.871,5.188l-5.16,4.285l-4.574,4.266l-8.195,7.954   l-3.959,3.354l-3.344,3.371l-3.344,2.72l-2.748,3.074l-5.16,4.284l-2.123,1.509l-1.527,1.845l-1.816,0.912l-1.221,1.229   l-1.518,1.211L101.102,68.609L415.453,69.215L415.453,69.215L415.453,69.215z M208.727,256.764L79.53,360.001l0.298-212.893   L208.727,256.764L208.727,256.764L208.727,256.764z" >
                         
                         </path>
                         
@@ -525,7 +540,7 @@ mutiarailmu.rumahtahfizh@gmail.com
 
 
 <section id="comen">
-<div id="disqus_thread" class="mt-10"></div>
+<div id="disqus_thread" class="mt-10 "></div>
 <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
